@@ -135,7 +135,7 @@ resource "azurerm_monitor_metric_alert" "warning_available_memory_alerts" {
     metric_name = "Available Memory Bytes"
     aggregation = "Average"
     operator = "LessThan"
-    threshold = "1000000000"
+    threshold = "2000000000"
   }
     action {
     action_group_id = azurerm_monitor_action_group.email_alert_ag.id
